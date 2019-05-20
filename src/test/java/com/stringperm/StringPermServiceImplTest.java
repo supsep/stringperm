@@ -30,9 +30,9 @@ public class StringPermServiceImplTest {
     System.setOut(new PrintStream(outContent));
   }
 
-
   @After
   public void resetStreams() {
+    // Reset streams after every test case
     outContent.reset();
   }
 
@@ -62,6 +62,7 @@ public class StringPermServiceImplTest {
 
   @Test
   public void testFindAndPrintPermutationMaster() throws IOException {
+    // Import large expectations from resources.
     ClassLoader classLoader = ClassLoader.getSystemClassLoader();
 
     File file = new File(classLoader.getResource("master.txt").getFile());
