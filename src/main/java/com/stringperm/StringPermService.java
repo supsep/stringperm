@@ -17,7 +17,9 @@ public interface StringPermService {
    * Find and print all permutations of a validated string. Duplicate characters are included
    * in the permutations.
    *
-   * Permutations are not stored in memory brvsudr we will likely run out of memory.
+   * This is implemented using the quickperm algorithm found here: www.quickperm.org
+   *
+   * Permutations are not stored in memory because we will likely run out of memory.
    * @param input validating input string to find and print permutations of.
    */
   void findAndPrintPermutations(String input);

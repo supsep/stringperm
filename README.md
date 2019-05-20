@@ -20,7 +20,7 @@ To run the program:
 Enter a String to find permutations of:  
 ```  
   
-Then input your numbers:  
+Then input your string:  
 ```  
 >sep  
 The following are permutations of the string "sep"  :  
